@@ -1,0 +1,50 @@
+{
+  "name": "twitch-gaming-trend-monitor-backend",
+  "version": "1.0.0",
+  "description": "Backend for Twitch Gaming Trend Monitor",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:seed": "npx sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0",
+    "socket.io": "^4.7.2",
+    "pg": "^8.11.3",
+    "sequelize": "^6.32.1",
+    "redis": "^4.6.8",
+    "passport": "^0.6.0",
+    "passport-twitch": "^1.0.2",
+    "express-session": "^1.17.3",
+    "connect-redis": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1",
+    "node-cron": "^3.0.2",
+    "sentiment": "^5.0.2",
+    "ws": "^8.14.2",
+    "express-rate-limit": "^6.10.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3",
+    "sequelize-cli": "^6.6.1"
+  },
+  "keywords": [
+    "twitch",
+    "gaming",
+    "analytics",
+    "streaming",
+    "trends"
+  ],
+  "author": "Twitch Gaming Trend Monitor",
+  "license": "MIT"
+}
